@@ -1,7 +1,4 @@
-/* */
-
 /* Set page border and general/default properties */
-
 html {
     font-size: 16px;
     min-width: 480px;
@@ -38,7 +35,6 @@ a:hover {
 .default-hidden {
     display: none !important;
 }
-
 
 /* Header properties */
 
@@ -103,16 +99,13 @@ header nav ul li a:hover {
     color: red;
 }
 
-
-/* Main section styles */
-
+/* Main section style */
 main {
     width: 90%;
     margin: 3rem auto auto auto;
 }
 
-
-/* Banner style */
+/* Home Page Banner style */
 
 #banner {
     background-image: url('../images/templeos-interface.png');
@@ -157,9 +150,7 @@ main {
     font-size: 1.1rem;
 }
 
-
-/* Styling for images */
-
+/* Styling for home images */
 #home-images {
     margin-top: 0;
     display: flex;
@@ -198,9 +189,7 @@ main {
     object-fit: cover;
 }
 
-
 /* Place "EOF" text on boxes with .eof class */
-
 .eof {
     display: inline-block;
     position: relative;
@@ -214,16 +203,13 @@ main {
     background-color: #eeeeee;
 }
 
-
-/* "See also" section styling */
-
+/* "See also" section styling -applies to all pages- */
 .further {
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .further h2 {
@@ -261,8 +247,7 @@ main {
 }
 
 
-/* Footer styling */
-
+/* Footer styling -applies to all pages- */
 footer {
     text-align: end;
     font-style: italic;
@@ -278,15 +263,7 @@ footer p a:hover {
     color: red;
 }
 
-
-
-
-
-
-/**/
-
-/* Bio Page Specific HTML */
-
+/* Main sections styling -applies to all pages- */
 .main-sections {
     box-sizing: border-box;
     margin: 3rem auto 0 auto;
@@ -308,7 +285,6 @@ footer p a:hover {
     border: 2px #0000a8 solid;
     width: 100%;
     padding: 2%;
-
 }
 
 .text-container img {
@@ -324,6 +300,16 @@ footer p a:hover {
     text-align: justify;
 }
 
+.text-container ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0 0 0 1.1rem;
+}
+
+.text-container li {
+    margin: 0.5rem 0;
+}
+
 .first-p {
     margin-top: 0;
 }
@@ -332,9 +318,25 @@ footer p a:hover {
     margin-bottom: 0;
 }
 
+/* Style for top border titles for use in multiple pages */
+.top-border-title {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    top: 1.8rem;
+    margin-left: 3%;
+    text-align: center;
+    color: #0000a8;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: #eeeeee;
+}
 
-/* Documentary box styling */
+.section-with-titletop {
+    margin-top: 0;
+}
 
+/* Bio Page Documentary box styling */
 #documentary-h2 {
     position: relative;
     top: 3rem;
@@ -361,28 +363,11 @@ footer p a:hover {
     max-width: 1120px;
 }
 
-.top-border-title {
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    top: 1.8rem;
-    margin-left: 3%;
-    text-align: center;
-    color: #0000a8;
-    font-family: "TempleOS", 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    background-color: #eeeeee;
-}
-
 #documentary-border-title {
     width: 52rem;
 }
 
-
-
 /* TempleOS page specific styling */
-
-
 #games-h2 {
     position: relative;
     top: 3rem;
@@ -400,20 +385,6 @@ footer p a:hover {
     padding: 2%;
     border: 5px double #0000a8;
     z-index: 1;
-}
-
-.section-with-titletop {
-    margin-top: 0;
-}
-
-.text-container ul {
-    list-style-type: square;
-    margin: 0;
-    padding: 0 0 0 1.1rem;
-}
-
-.text-container li {
-    margin: 0.5rem 0;
 }
 
 #games-images {
@@ -444,13 +415,10 @@ footer p a:hover {
     object-fit: contain;
 }
 
-
 /* GodSays page specific styles */
-
 #godspeak-section {
     margin-top: 2rem;
 }
-
 
 #godspeak-button {
     display: block;
@@ -525,7 +493,6 @@ footer p a:hover {
     font-weight: bold;
 }
 
-
 #associations-table {
     border-collapse: collapse;
     table-layout: fixed;
@@ -572,17 +539,7 @@ footer p a:hover {
     width: 70%;
 }
 
-
-
-
-
-
-
-
-
-
 /* Media Queries Settings */
-
 @media only screen and (min-width: 2050px) {
     #home-images figure {
         height: 23vw;
