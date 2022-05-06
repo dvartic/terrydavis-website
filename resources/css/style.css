@@ -1,0 +1,718 @@
+/* */
+
+/* Set page border and general/default properties */
+
+html {
+    font-size: 16px;
+    min-width: 480px;
+    max-width: 2880px;
+}
+
+body {
+    width: 90%;
+    margin: 1rem auto;
+    border: 2px solid yellow;
+    font-family: "Fira Code", 'Courier New', Courier, monospace;
+    background-color: #eeeeee;
+}
+
+figcaption a {
+    text-decoration: underline;
+    color: darkred;
+}
+
+figcaption a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: underline;
+    color: darkred;  
+}
+
+a:hover {
+    color: red;
+}
+
+/* Hidden content - later used for media queries */
+.default-hidden {
+    display: none !important;
+}
+
+
+/* Header properties */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-basis: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #0000a8;
+    color: white;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+}
+
+.page-title h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.tribute-page-text {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.header-line {
+    height: 0px;
+    border: 1px solid white;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+.tribute-page-text p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: auto 1rem;
+
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+
+header nav ul li a:hover {
+    color: red;
+}
+
+
+/* Main section styles */
+
+main {
+    width: 90%;
+    margin: 3rem auto auto auto;
+}
+
+
+/* Banner style */
+
+#banner {
+    background-image: url('../images/templeos-interface.png');
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#banner h1 {
+    color: white;
+    background-color: #0000a8;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+#page-intro {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-top: 2px solid #0000a8;
+    border-left: 2px solid #0000a8;
+    border-right: 2px solid #0000a8;
+}
+
+#page-intro p {
+    margin: 1rem auto;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+
+/* Styling for images */
+
+#home-images {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 5px double #0000a8;
+    z-index: 1;
+    padding: 2rem 3%;
+}
+
+#home-images figure {
+    margin: 1rem 3%;
+    height: 26vw;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 230px;
+}
+
+#home-images figure figcaption {
+    text-align: center;
+}
+
+#terry-artistic {
+    vertical-align: bottom;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#terry-photo {
+    vertical-align: bottom;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+
+/* Place "EOF" text on boxes with .eof class */
+
+.eof {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    bottom: 1.8rem;
+    margin-left: 85%;
+    width: 5rem;
+    text-align: center;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    color: #0000a8;
+    background-color: #eeeeee;
+}
+
+
+/* "See also" section styling */
+
+.further {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.further h2 {
+    font-size: 2rem;
+    margin: 0 1rem;
+    
+}
+
+.further ul {
+    flex-basis: 100%;
+    margin-left: 2%;
+    list-style-type: square;
+}
+
+.further ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.further ul li a {
+    text-decoration: underline;
+    color: darkred;
+}
+
+.further ul li a:hover {
+    color: red;
+}
+
+.more-line {
+    height: 0px;
+    border: 1px solid #0000a8;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+
+/* Footer styling */
+
+footer {
+    text-align: end;
+    font-style: italic;
+    margin-right: 3%;
+}
+
+footer p a {
+    text-decoration: underline;
+    color: darkred;
+}
+
+footer p a:hover {
+    color: red;
+}
+
+
+
+
+
+
+/**/
+
+/* Bio Page Specific HTML */
+
+.main-sections {
+    box-sizing: border-box;
+    margin: 3rem auto 0 auto;
+}
+
+.main-sections h2 {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #0000a8;
+    color: white;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+
+}
+
+.text-container {
+    box-sizing: border-box;
+    border: 2px #0000a8 solid;
+    width: 100%;
+    padding: 2%;
+
+}
+
+.text-container img {
+    float: left;
+    width: 20%;
+    min-width: 150px;
+    max-width: 250px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.text-container p {
+    text-align: justify;
+}
+
+.first-p {
+    margin-top: 0;
+}
+
+.last-p {
+    margin-bottom: 0;
+}
+
+
+/* Documentary box styling */
+
+#documentary-h2 {
+    position: relative;
+    top: 3rem;
+}
+
+#documentary-section {
+    margin-top: 0;
+}
+
+#documentary-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+    border: 5px double #0000a8;
+    z-index: 1;
+}
+
+#documentary-section div iframe {
+    flex-grow: 1;
+    height: 40vw;
+    max-height: 630px;
+    max-width: 1120px;
+}
+
+.top-border-title {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    top: 1.8rem;
+    margin-left: 3%;
+    text-align: center;
+    color: #0000a8;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: #eeeeee;
+}
+
+#documentary-border-title {
+    width: 52rem;
+}
+
+
+
+/* TempleOS page specific styling */
+
+
+#games-h2 {
+    position: relative;
+    top: 3rem;
+}
+
+#games-border-title {
+    width: 7rem;
+}
+
+#games-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    border: 5px double #0000a8;
+    z-index: 1;
+}
+
+.section-with-titletop {
+    margin-top: 0;
+}
+
+.text-container ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0 0 0 1.1rem;
+}
+
+.text-container li {
+    margin: 0.5rem 0;
+}
+
+#games-images {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#games-images figure {
+    flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 40%;
+}
+
+#games-images figure figcaption {
+    text-align: center;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#games-images figure img {
+    vertical-align: bottom;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* GodSays page specific styles */
+
+#godspeak-section {
+    margin-top: 2rem;
+}
+
+
+#godspeak-button {
+    display: block;
+    margin: 1rem auto auto auto;
+    border: none;
+    padding: 0.3rem;
+    position: relative;
+    top: 2rem;
+    background-color: #0000a8;
+    border-radius: 0.5rem;
+}
+
+#godspeak-button-h2 {
+    color: yellow;
+    margin: 0;
+}
+
+#godspeak-button:hover {
+    cursor: pointer;
+}
+
+#godspeak-button-h2:hover {
+    color: red;
+}
+
+.side-border-title {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    top: 4rem;
+    right: 1.8rem;
+    text-align: center;
+    color: #0000a8;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    background-color: #eeeeee;
+    transform: rotate(-90deg);
+}
+
+#term-side-title {
+    width: 4rem;
+}
+
+#terminal-box {
+    border: 5px double #0000a8;
+    z-index: 1;
+    padding: 2rem 3%;
+    min-height: 10rem;
+}
+
+#term-prompt {
+    float: left;
+    font-family: "TempleOS", 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-right: 0.6rem;
+}
+
+#term-output {
+    position: relative;
+    bottom: 0.2rem;
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+#note-p {
+    font-size: 0.8rem;
+}
+
+#note-p i {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+#associations-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 5rem;
+}
+
+#associations-table thead {
+    background-color: midnightblue;
+    color: white;
+}
+
+#associations-table tbody tr:nth-child(odd) {
+    background-color: #e6e6ff;
+}
+
+#associations-table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+#associations-table thead tr th {
+    text-align: center;
+}
+
+#associations-table, th, td {
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+#associations-table th:nth-child(1) {
+    width: 30%;
+}
+
+#associations-table td:nth-child(1) {
+    width: 30%;
+}
+
+#associations-table th:nth-child(2) {
+    width: 70%; 
+}
+
+#associations-table td:nth-child(2) {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries Settings */
+
+@media only screen and (min-width: 2050px) {
+    #home-images figure {
+        height: 23vw;
+        max-height: 662.4px;
+        max-width: 662.4px;
+    }
+    #documentary-section div iframe {
+        max-height: 945px;
+        max-width: 1680px;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1150px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+@media only screen and (max-width: 1150px) and (min-width: 990px) {
+    html {
+        font-size: 12px;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 830px) {
+    html {
+        font-size: 12px;
+    }
+    .page-title h1 {
+        font-size: 1.5rem;
+    }
+    header nav ul li a {
+        font-size: 1rem;
+    }
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+    .page-title h1 {
+        font-size: 1.5rem;
+    }
+    header nav ul li a {
+        font-size: 1rem;
+    }
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+    .page-title h1 {
+        font-size: 1rem;
+    }
+    .tribute-page-text {
+        font-size: 0.8rem;
+    }
+    header nav ul li a {
+        font-size: 1rem;
+    }
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+    #home-images figure {
+        height: 52vw;
+    }
+    #documentary-border-title {
+        font-size: 0.7rem;
+        width: 38rem;
+        top: 1.5rem;
+    }
+    #documentary-h2 {
+        margin-bottom: 1.5rem;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) and (min-width: 300px) {
+    .tribute-page-text {
+        display: none;
+    }
+    html {
+        font-size: 10px;
+    }
+    .page-title h1 {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+    #home-images figure {
+        height: 52vw;
+    }
+    #documentary-border-title {
+        font-size: 0.7rem;
+        width: 26rem;
+        top: 1.5rem;
+    }
+    #documentary-h2 {
+        margin-bottom: 1.5rem;
+    }
+    .default-hidden {
+        display: inline-block !important;
+    }
+    .default-shown {
+        display: none !important;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+}

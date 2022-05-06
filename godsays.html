@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/custom-fonts.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="./resources/scripts/index.js" defer></script>
+    <title>Terry A. Davis Tribute Page</title>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <h1>Terry A. Davis</h1>
+            <div class="tribute-page-text"><div class="header-line"></div><p>Tribute Page</p></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home.html" target="_self">Home</a></li>
+                <li><a href="./bio.html" target="_self">Bio</a></li>
+                <li><a href="./templeos.html" target="_self">TempleOS</a></li>
+                <li><a href="./godsays.html" target="_self">GodSays</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-sections">
+            <h2>What is GodSays/GodSpeak</h2>
+            <div class="text-container">
+                <p class="first-p"><b>TempleOS</b> includes a few random generators. Terry believed that these generators allowed God to speak and communicate with the user. Terry was seen on videos and on forums interpreting the output of these random generators, making associations in the text much like an Rorschach ink-blot test is performed.</p>
+                <p>From my dive into TempleOS, these are the random generators available (written in HolyC):</p>
+                <ul>
+                    <li><b>GodWord: </b>God says a single word, taken from a list of 7570 common english words.</li>
+                    <li><b>GodBiblePassage: </b>God selects a random passage from the Bible for you to read.</li>
+                    <li><b>GodSong: </b>God makes a song for you.</li>
+                    <li><b>GodDoodle: </b>God makes a sprite for you.</li>
+                </ul>
+                <p>According to Terry, the technique used to source randomness on those programs is reading a microsecond-range stop-watch each button press. You can read more about them on <a>this Christine Dodrill post.</a></p>
+                <p>Apart from the TempleOS generators, Terry had a bash script on GNU+Linux that allowed God to construct more complex phrases. <b>This is what we call GodSpeak/GodSays. </b>This code used /dev/urandom as source of randomness, gshuff to shuffle the elements and a Happy.txt file that contained those elements. This Happy.txt file contained 712 entries of both words and phrases. The bash script outputs 32 of these elements.</p>
+                <p class="last-p">I ported this bash script to JavaScript while trying to stay as faithful as possible to the original code. Check my <a href="">GitHub page</a> for more information.</p>
+            </div>
+        </section>
+
+        <section id="godspeak-section" class="main-sections section-with-titletop">
+            <button id="godspeak-button"><h2 id="godspeak-button-h2">Speak to God</h2></button>
+            <h3 id="term-side-title" class="side-border-title">TERM</h3>
+            <div id="terminal-box" class="text-container">
+                <p id="term-prompt" class="first-p last-p">></p>
+                <p id="term-output" class="first-p last-p"></p>     
+            </div>
+            <p class="eof">EOF</p>
+        </section>
+
+        <section class="main-sections">
+            <h2>Examples of Terry's associations:</h2>
+            <p id="note-p"><i>Note:</i> the original list of Terry's associations can be found at <a href="https://web.archive.org/web/20150627232007/http://www.templeos.org/Wb/Adam/God/HSNotes.html">TempleOS Arhive.org circa 2015</a>.</p>
+            <table id="associations-table">
+                <thead>
+                    <tr>
+                        <th>QUESTION</th>
+                        <th>GOD'S ANSWER</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>War?</td>
+                        <td>"Servicemen competing"</td>
+                    </tr>
+
+                    <tr>
+                        <td>Is the World perfectly just?</td>
+                        <td>Are you calling me lazy?</td>
+                    </tr>
+    
+                    <tr>
+                        <td>On doing offerings?</td>
+                        <td>"Honest measures"</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Arab/Jews?</td>
+                        <td>"Oil funny hopefully"</td>
+                    </tr>
+    
+                    <tr>
+                        <td>On racism?</td>
+                        <td>"Sports"</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Favorite animal?</td>
+                        <td>"Elephant two"</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Favorite sport?</td>
+                        <td>Hockey</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Women's dress</td>
+                        <td>Upper skin exposure not as bad as lower.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Favorite video game?</td>
+                        <td>Donkey Kong</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Does He like mirrored glass megachurch?</td>
+                        <td>"Secular glass"</td>
+                    </tr>
+    
+                    <tr>
+                        <td>After Katrina</td>
+                        <td>Suffering Simplifies Life</td>
+                    </tr>
+    
+                    <tr>
+                        <td>On Alcohol?</td>
+                        <td>Hate inebriation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Operating system?</td>
+                        <td>Was about to make line number column in editor. God nixed it. I was about to do different graphic modes when I found 800x600 missing. God said just one mode 640x480. I was about to add child windows. God said, "God is not the author of such confusion." I asked for verification of 640x480 16 color. God said it was because of the children and their offerings. I asked about sound. God said "single voice". I asked for verification of not having different drivers. God confirmed this.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="further">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+              </svg>
+            <h2>Further reading</h2>
+            <div class="more-line"></div>
+            <ul>
+                <li><a href="https://christine.website/blog/templeos-2-god-the-rng-2019-05-30" target="_blank">Christine Dodrill: TempleOS - god, the Random Number Generator</a></li>
+                <li><a href="" target="_blank">My GitHub Page</a></li>
+                <li><a href="https://github.com/orhun/godsays" target="_blank">Orhun’s Rust port of GodSays/GodSpeaks</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Web created by <a href="https://github.com/dvartic" target="_blank">Dvartic</a>. This work is uncopyrighted</p>
+    </footer>
+
+
+</body>
+</html>
