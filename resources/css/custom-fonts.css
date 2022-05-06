@@ -1,5 +1,4 @@
 @font-face {
     font-family: "TempleOS";
-    src: url("../fonts/templeos_font.woff") format("woff"),
-        url("../fonts/templeos_font.ttf") format("truetype");
+    src: url("../fonts/templeos_font.ttf") format("truetype");
 }
