@@ -14,3 +14,4 @@ Terry was an inspiration to many including myself and I found that information i
 * https://www.youtube.com/watch?v=UCgoxQCf5Jg (TempleOS | Down the Rabbit Hole)
 * https://www.256kilobytes.com/content/show/1939/biography-of-terry-a-davis-the-greatest-programmer-to-ever-live (A very detailed biography of Terry)
 * https://christine.website/blog/series/templeos (Christine Dodrill TempleOS posts)
+* https://github.com/rendello/templeos_font (TempleOS font conversion, used in the website)
