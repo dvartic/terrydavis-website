@@ -1,7 +1,7 @@
 /* Set page border and general/default properties */
 html {
     font-size: 16px;
-    min-width: 480px;
+    min-width: 320px;
     max-width: 2880px;
 }
 
@@ -18,17 +18,9 @@ figcaption a {
     color: darkred;
 }
 
-figcaption a:hover {
-    color: red;
-}
-
 a {
     text-decoration: underline;
     color: darkred;  
-}
-
-a:hover {
-    color: red;
 }
 
 /* Hidden content - later used for media queries */
@@ -95,9 +87,7 @@ header nav ul li a {
 
 }
 
-header nav ul li a:hover {
-    color: red;
-}
+
 
 /* Main section style */
 main {
@@ -235,10 +225,6 @@ main {
     color: darkred;
 }
 
-.further ul li a:hover {
-    color: red;
-}
-
 .more-line {
     height: 0px;
     border: 1px solid #0000a8;
@@ -257,10 +243,6 @@ footer {
 footer p a {
     text-decoration: underline;
     color: darkred;
-}
-
-footer p a:hover {
-    color: red;
 }
 
 /* Main sections styling -applies to all pages- */
@@ -361,6 +343,8 @@ footer p a:hover {
     height: 40vw;
     max-height: 630px;
     max-width: 1120px;
+    min-width: 0;
+    min-height: 0;
 }
 
 #documentary-border-title {
@@ -434,18 +418,6 @@ footer p a:hover {
 #godspeak-button-h2 {
     color: yellow;
     margin: 0;
-}
-
-#godspeak-button:hover {
-    cursor: pointer;
-}
-
-#godspeak-button-h2:hover {
-    color: red;
-}
-
-#godspeak-button-h2:active:hover {
-    color: darkred;
 }
 
 .side-border-title {
@@ -639,7 +611,7 @@ footer p a:hover {
     }
 }
 
-@media only screen and (max-width: 580px) and (min-width: 300px) {
+@media only screen and (max-width: 580px) and (min-width: 480px) {
     .tribute-page-text {
         display: none;
     }
@@ -675,5 +647,107 @@ footer p a:hover {
     }
     #games-images figure {
         max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .tribute-page-text {
+        display: none;
+    }
+    html {
+        font-size: 9px;
+    }
+    .page-title h1 {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+    header nav ul {
+        padding-left: 0.8rem;
+    }
+    header nav ul li {
+        margin: auto 0.5rem;
+    }
+    header nav ul li a {
+        font-size: 0.7rem;
+    }
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+    #home-images figure {
+        height: 52vw;
+    }
+    #documentary-border-title {
+        font-size: 0.7rem;
+        width: 26rem;
+        top: 1.5rem;
+    }
+    #documentary-h2 {
+        margin-bottom: 1.5rem;
+    }
+    .default-hidden {
+        display: inline-block !important;
+    }
+    .default-shown {
+        display: none !important;
+    }
+    #games-images figure {
+        max-width: 100%;
+    }
+    .eof {
+        margin-left: 75%;
+    }
+    #games-images figure {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* Set hover for devices that support it */
+@media (hover: hover) {
+    a:hover {
+        color: red;
+    }
+    figcaption a:hover {
+        color: red;
+    }
+    header nav ul li a:hover {
+        color: red;
+    }
+    .further ul li a:hover {
+        color: red;
+    }
+    footer p a:hover {
+        color: red;
+    }
+    #godspeak-button:hover {
+        cursor: pointer;
+    }
+    #godspeak-button-h2:hover {
+        color: red;
+    }
+    #godspeak-button-h2:active:hover {
+        color: darkred;
+    }
+  }
+
+/* Set active instead of hover for devices that do not support hover */
+@media (hover: none) {
+    a:active {
+        color: red;
+    }
+    figcaption a:active {
+        color: red;
+    }
+    header nav ul li a:active {
+        color: red;
+    }
+    .further ul li a:active {
+        color: red;
+    }
+    footer p a:active {
+        color: red;
+    }
+    #godspeak-button-h2:active {
+        color: darkred;
     }
 }
